@@ -1,0 +1,11 @@
+<project-execution-model
+	xmlns="https://api.runeduniverse.net/runes4tools/r4m-pem"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://api.runeduniverse.net/runes4tools/r4m-pem 
+	https://api.runeduniverse.net/runes4tools/r4m-pem-v1.xsd">
+
+	<modelVersion>1.0.0</modelVersion>
+	<executions>
+
+	</executions>
+</project-execution-model>
