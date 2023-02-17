@@ -3,19 +3,27 @@
 
 		<component>
 			<role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
-			<role-hint>hexsocket-app</role-hint>
+			<role-hint>hexsocket-module</role-hint>
 			<implementation>org.apache.maven.lifecycle.mapping.DefaultLifecycleMapping
 			</implementation>
 			<configuration>
 				<lifecycles>
 					<lifecycle>
+						<id>clean</id>
+						<phases>
+							<install>
+								org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean
+							</install>
+						</phases>
+					</lifecycle>
+					<lifecycle>
 						<id>default</id>
 						<phases>
 							<install>
-								org.apache.maven.plugins:maven-install-plugin:2.4:install
+								org.apache.maven.plugins:maven-install-plugin:3.1.0:install
 							</install>
 							<deploy>
-								org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy
+								org.apache.maven.plugins:maven-deploy-plugin:3.1.0:deploy
 							</deploy>
 						</phases>
 					</lifecycle>
@@ -25,19 +33,27 @@
 
 		<component>
 			<role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
-			<role-hint>hexsocket-module</role-hint>
+			<role-hint>hexsocket-app</role-hint>
 			<implementation>org.apache.maven.lifecycle.mapping.DefaultLifecycleMapping
 			</implementation>
 			<configuration>
 				<lifecycles>
 					<lifecycle>
+						<id>clean</id>
+						<phases>
+							<install>
+								org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean
+							</install>
+						</phases>
+					</lifecycle>
+					<lifecycle>
 						<id>default</id>
 						<phases>
 							<install>
-								org.apache.maven.plugins:maven-install-plugin:2.4:install
+								org.apache.maven.plugins:maven-install-plugin:3.1.0:install
 							</install>
 							<deploy>
-								org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy
+								org.apache.maven.plugins:maven-deploy-plugin:3.1.0:deploy
 							</deploy>
 						</phases>
 					</lifecycle>
