@@ -11,9 +11,9 @@
 					<lifecycle>
 						<id>clean</id>
 						<phases>
-							<install>
+							<clean>
 								org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean
-							</install>
+							</clean>
 						</phases>
 					</lifecycle>
 					<lifecycle>
@@ -41,9 +41,9 @@
 					<lifecycle>
 						<id>clean</id>
 						<phases>
-							<install>
+							<clean>
 								org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean
-							</install>
+							</clean>
 						</phases>
 					</lifecycle>
 					<lifecycle>
